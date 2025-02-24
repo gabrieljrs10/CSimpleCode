@@ -5,16 +5,16 @@ main () {
     int idade [3];
     float altura [3] = {1,1.5,1.7};
 
+    printf("\n Digite sua idade: ");
+    scanf ("%d", &idade[0]);
+    printf("\n Digite sua idade: ");
+    scanf ("%d", &idade[1]);
+    printf("\n Digite sua idade: ");
+    scanf ("%d", &idade[2]);
+
     printf("\n  Vetor altura[0] = %.1f", altura [0]);
     printf("\n  Vetor altura[1] = %.1f", altura [1]);
     printf("\n  Vetor altura[2] = %.1f", altura [2]);
-
-    printf("\n Digite sua idade: ");
-    scanf ("%d" &idade[0]);
-    printf("\n Digite sua idade: ");
-    scanf ("%d" &idade[1]);
-    printf("\n Digite sua idade: ");
-    scanf ("%d" &idade[2]);
 
     printf("\n  Vetor idade[0] = %d", idade [0]);
     printf("\n  Vetor idade[1] = %d", idade [1]);
