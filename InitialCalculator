@@ -7,6 +7,7 @@ int main()
     setlocale(LC_ALL,"Portuguese");
 
     int valor1, valor2, resultado;
+
     printf("Digite o primeiro valor: ");
     scanf("%d", &valor1);
 
@@ -14,6 +15,7 @@ int main()
     scanf("%d", &valor2);
 
     resultado = valor1 + valor2;
+
     printf("A soma dos valores é: %d", resultado);
 
     return 0;
