@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+{
+    setlocale(LC_ALL,"Portuguese");
+
+    int valor1, valor2, resultado, nao;
+    char operador;
+
+    printf("\n Digite o primeiro valor: ");
+    scanf("%d", &valor1);
+    setbuf(stdin, NULL);
+
+    printf("\n Qual operação deseja fazer? ");
+    scanf("%c", &operador);
+    setbuf(stdin, NULL);
+
+    printf("\n Digite o segundo valor: ");
+    scanf("%d", &valor2);
+    setbuf(stdin,NULL);
+
+    if (operador == '+'){
+            resultado = valor1 + valor2;
+        }
+            else if (operador == '-'){
+            resultado = valor1 - valor2;
+            }
+                else if (operador == '*'){
+                resultado = valor1 * valor2;
+                }
+                    else if (operador == '/'){
+                    resultado = valor1 / valor2;
+                    }
+                        else printf ("Operador inválido");
+
+
+    printf("\n O resultado da operação é: %d", resultado);
+
+    printf("\n Deseja fazer outra operação?");
+    printf("\n 1-Sim");
+    printf("\n 2-Não");
+    printf("\nOpção escolhida: ");
+    scanf("\n%d", &nao);
+    setbuf(stdin,NULL);
+
+    while (nao != 2){
+    printf("\n Digite o primeiro valor: ");
+    scanf("%d", &valor1);
+    setbuf(stdin, NULL);
+
+    printf("\n Qual operação deseja fazer? ");
+    scanf("%c", &operador);
+    setbuf(stdin, NULL);
+
+    printf("\n Digite o segundo valor: ");
+    scanf("%d", &valor2);
+    setbuf(stdin,NULL);
+
+    if (operador == '+'){
+            resultado = valor1 + valor2;
+        }
+            else if (operador == '-'){
+            resultado = valor1 - valor2;
+            }
+                else if (operador == '*'){
+                resultado = valor1 * valor2;
+                }
+                    else if (operador == '/'){
+                    resultado = valor1 / valor2;
+                    }
+                        else printf ("Operador inválido");
+
+
+    printf("\n O resultado da operação é: %d", resultado);
+
+    printf("\n Deseja fazer outra operação? ");
+    printf("\n 1-Sim");
+    printf("\n 2-Não");
+    printf("\n Opção escolhida: ");
+    scanf("%d", &nao);
+    setbuf(stdin,NULL);
+        }
+    }
+    return 0;
+}
