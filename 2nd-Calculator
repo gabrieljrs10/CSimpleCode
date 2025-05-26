@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL,"Portuguese");
+
+    int valor1, valor2, resultado;
+    char operador;
+
+    printf("\n Digite o primeiro valor: ");
+    scanf("%d", &valor1);
+    setbuf(stdin, NULL);
+
+    printf("\n Qual operação deseja fazer? ");
+    scanf("%c", &operador);
+    setbuf(stdin, NULL);
+
+    printf("\n Digite o segundo valor: ");
+    scanf("%d", &valor2);
+    setbuf(stdin,NULL);
+
+    if (operador == '+'){
+            resultado = valor1 + valor2;
+        }
+            else if (operador == '-'){
+            resultado = valor1 - valor2;
+            }
+                else if (operador == '*'){
+                resultado = valor1 * valor2;
+                }
+                    else if (operador == '/'){
+                    resultado = valor1 / valor2;
+                    }
+                        else printf ("Operador inválido");
+
+
+    printf("\n O resultado da operação é: %d", resultado);
+
+    return 0;
+}
