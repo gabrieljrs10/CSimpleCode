@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+    int cont;
+    setlocale(LC_ALL, "Portuguese");
+    printf("\nVamos contar até o 10!\n");
+    for ( cont = 0 ; cont < 11; cont = cont + 1){;
+        printf("\n%d\n", cont);
+    }
+    return 0;
+}
