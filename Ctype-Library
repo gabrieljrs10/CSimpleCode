@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <ctype.h>
+
+int main(){
+    //Exercicio de manipulação de caracteres com biblioteca CType//
+    //nesse codigo temos a funcão da biblioteca CType "toupper"//
+    //essa função faz o seguinte se você colocar o caractere maiúsculo ou minúsculo//
+    //no final ele vai exibir um caractere maiúsculo, faça o teste!//
+    //PS: Se quiser fazer o reverso, é só torcar o "toupper" por "tolower"!//
+    
+    setlocale(LC_ALL,"Portuguese");
+    
+    char letra;
+    
+    printf("\n Digite uma letra MINUSCÚLA: \n");
+    scanf("%c", &letra);
+
+    letra=toupper(letra);
+
+    printf("\nVocê digitou a letra: %c\n", letra);
+    
+    return 0;
+}
