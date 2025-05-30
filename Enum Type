@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+//PT-BR - O objetivo deste algoritmo é fazer o uso do tipo de variável ENUM//
+
+//EN - The purpose of this code, is to make use of the ENUM variable type//
+
+
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+
+    enum diasemana{dom, seg, ter, qua, qui, sex, sab};
+    int diasemana = 1;
+
+    if (diasemana==0 || diasemana==6){
+        printf("final de semana!");
+    }
+        else {printf("Dia útil!");
+        }
+    return 0;
+}
