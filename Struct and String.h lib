@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+//PT-BR - O objetivo deste algoritmo é fazer o uso do tipo de variável STRUCT//
+
+//EN - The purpose of this code, is to make use of the STRUCT variable types//
+
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+
+    struct TipoAluno{
+        int nota;
+        char nome [30];
+    };
+
+    struct TipoAluno Alunos [5];
+
+    Alunos[0] .nota = 8;
+    strcpy(Alunos[0] .nome, "Gabriel");
+
+    Alunos[1] .nota = 10;
+    strcpy(Alunos[1] .nome, "Gilberto");
+
+    Alunos[2] .nota = 9;
+    strcpy(Alunos[2] .nome, "Roberto");
+
+    Alunos[3] .nota = 7;
+    strcpy(Alunos[3] .nome, "Paulo");
+
+    Alunos[4] .nota = 6;
+    strcpy(Alunos[4] .nome, "Vinicius");
+
+    int i;
+
+    for(i=0;i<5;i++){
+        printf("\n\nA nota do aluno %s foi de: %d\n\n", Alunos[i] .nome, Alunos[i] .nota);
+    }
+
+    return 0;
+}
